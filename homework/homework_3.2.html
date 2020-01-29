@@ -1,9 +1,44 @@
 <!DOCTYPE html>
 <html>
 <meta charset="UTF-8">
-<title>Homework_2.2</title>
-<p>Mansi Chaubey</p>
+    <head>
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    
+        <style>
+            body{ margin: 16px 16px 16px 16px; }
+        </style>
+    </head>
+    
+<title>Homework_3.2</title>
+  <body>
+    <p class="lead">Mansi Chaubey</p>
     <form id= orderOptions>
-    <input type= "text" id="name" placeholder= "Enter your name.">
+        
+        <div class="form-group">
+            <label for="email address">Email Address</label><br>
+            <input type= "text" id="name" placeholder= "Enter your name"><br>
+        </div>
+        
+        <div class="form-group">
+            <label for="WhereToEat">Where To Eat</label><br>
+            <input type="radio" id="whereEating" name="whereEating" value="Eat In">Eat In<br>
+            <input type="radio" id="whereEating" name="whereEating" value="Take out">Take out<br>
+            <input type="radio" id="whereEating" name="whereEating" value="Delivery">Delivery<br>
+        </div>
+        
+        <div class="form-group">
+            <label for="food type">Food Type</label><br>
+            <select name="food type" id="foodtype">
+                <option value="Mexican">Mexican</option>
+                <option value="Italian">Italian</option>
+                <option value="Chinese">Chinese</option>
+                <option value="Indian">Indian</option>
+            </select>
+        </div>
+ 
     </form>
+  </body>
 </html>
