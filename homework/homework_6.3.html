@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <canvas id="myCanvas" width="300" height="300" style="border:1px solid #000000;">
+    </canvas>
+
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var canvasVariable = canvas.getContext("2d");
+        canvasVariable.fillStyle = "#FF0000";
+        canvasVariable.fillRect(0, 0, 100, 100);
+        canvasVariable.font = "30px Arial";
+        canvasVariable.fillText("659457593", 100, 300);
+
+        function drawS() {
+            var canvas = document.getElementById("myCanvas");
+            var lineVar = canvas.getContext("2d");
+            lineVar.linewidth = 90;
+            lineVar.strokeStyle = 'blue';
+            lineVar.moveTo(110, 210);
+            lineVar.lineTo(110, 110);
+            lineVar.lineTo(160, 110);
+            lineVar.lineTo(160, 160);
+            lineVar.lineTo(160, 110);
+            lineVar.lineTo(210, 110);
+            lineVar.lineTo(210, 210);
+            lineVar.stroke();
+        }
+        document.getElementsByTagName("body").innerHTML = window.drawS();
+    </script>
+
+
+</body>
+
+</html>
